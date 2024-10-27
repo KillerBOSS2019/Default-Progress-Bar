@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Default Progress Bar",
+    "description": "Change Youtube or Youtube Music Progress Bar back to default full red",
+    "version": "1.0",
+    "action": {
+      "default_icon": "images/icon.png"
+    },
+    "content_scripts": [
+      {
+        "js": ["scripts/content.js"],
+        "matches": [
+          "https://www.youtube.com/*",
+          "https://music.youtube.com/*"
+        ]
+      }
+  ]
+}
